@@ -24,7 +24,8 @@ def write_json(ajouter,fichier_json ):
     with open(fichier_json, "w", encoding = "utf-8") as r:
         json.dump(ajouter,r)
 
-def find_contacte()
+def find_contacte():
+    pass
 
   
 
