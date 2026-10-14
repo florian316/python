@@ -1,0 +1,8 @@
+{
+  "type": "Monstre",
+  "nom": "Troll",
+  "points_de_vie": 40,
+  "force": 3,
+  "niveau_de_danger": 2,
+  "butin": "10 pi\u00e8ces d'or"
+}

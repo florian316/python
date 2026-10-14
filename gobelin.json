@@ -1,0 +1,6 @@
+{
+  "type": "Personnage",
+  "nom": "Gobelin",
+  "points_de_vie": 10,
+  "force": 3
+}

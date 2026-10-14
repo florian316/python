@@ -72,7 +72,27 @@ class Monstre(Personnage):
         return d 
 
         
+def charger_personnage(chemin):
+    with open(chemin, "r", encoding="utf-8") as f:
+        d = json.load(f)
+    if d["type"] == "Heros" :
+        return Heros(d["nom"], d["points_de_vie"], d["force"], d["mana"])
+    elif d["type"] == "Monstre":
+        return Monstre(d["nom"], d["points_de_vie"], d["force"], d["niveau_de_danger"], d["butin"])
+    elif d["type"] == "Personnage":
+        return Personnage(d["nom"], d["points_de_vie"], d["force"])
+
+
+class Partie:
+
+    def __init__(self):
+        self.personnages = []
+        self.historique = []   # liste de messages, dans l'ordre chronologique
+
+    def ajouter_personnage(self, personnage):
+        self.personnags.append(personnage)
+
+    def combat(self, attaquant, defenseur):
 
 
 
-    
